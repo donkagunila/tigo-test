@@ -57,6 +57,10 @@
 	list-style: none;
 	margin: 0;
 }
+.main-kinara ul li{
+	margin-bottom: 10px;
+	font-size: 0.9rem;
+}
 .middle-body{
 	padding: 0px 40px;
 }
@@ -64,14 +68,14 @@
 	content: "•";
 	color: #f3b415;
 	display: inline-block; 
-	width: 1em;
+	width: 0.6em;
   	margin-left: -1em
 }
 .orange-dots li::before{
 	content: "•";
 	color: #f26d1e;
 	display: inline-block; 
-	width: 1em;
+	width: 0.6em;
   	margin-left: -1em
 }
 .blue-dots li::before{
@@ -79,15 +83,30 @@
 	color: #41c9f5;
 	font-size: 15px;
 	display: inline-block; 
-	width: 1em;
+	width: 0.6em;
   	margin-left: -1em
+}
+.kinara-intro{
+	padding: 20px 60px;
+}
+.kinara-title{
+	padding: 20px 60px;
 }
 
 @media screen and (max-width: 768px){
 	.line-separator{
 		display: none;
 	}
-	
+	.m-30{
+		margin: 0px;
+	}
+	.plr-10{
+		padding: 35px 10px;
+	}
+	.kinara-intro, 
+	.kinara-title{
+		padding: 20px 10px;
+	}
 }
 
 .kinara_page{
