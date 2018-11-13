@@ -96,22 +96,6 @@
 	font-weight: 100;
 }
 
-@media screen and (max-width: 768px){
-	.line-separator{
-		display: none;
-	}
-	.m-30{
-		margin: 0px;
-	}
-	.plr-10{
-		padding: 35px 10px;
-	}
-	.kinara-intro, 
-	.kinara-title{
-		padding: 20px 10px;
-	}
-}
-
 .kinara_page{
 	background: #0B2659;
     background: -webkit-radial-gradient( #2a3e86, #142254, #0B2659);
@@ -123,40 +107,46 @@
 }
 
 .card-kinara{
-	height: 300px;
+	/*height: 300px;*/
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 20px;
-	margin-left: 	20px;
-	margin-top: 	20px;
-	margin-bottom: 	70px;
 	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
-	display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;	
-    /*height: 	100%;*/
-    /*padding-right: 65px ;*/
+    height:100%;
+    width: 100%;
+  
 }
 .package-place{
-	padding-left: 65px ;
+	padding-left: 65px;
 }
-.line-bar{margin-bottom: 	30px;}
+.package-place.back-right{
+	padding-left: 0px;
+	padding-right: 66px;
+}
+.image-place{
+	height: 100%;
+	padding-right: 66px;
+	padding-top: 70px;
+	/*margin-bottom: 100px;*/
+}
+.image-place.to-left{
+	padding-right: 0px;
+	padding-left: 66px;
+}
+.line-bar{
+	margin-bottom: 	30px;
+}
 .table-kinara{
-	/*background-color: #fff;*/
+	background-color: #0B2659;
     box-shadow: 5px 5px 25px rgba(0,0,0,.2);
     color: #212121;
-    /*border-radius: 5px;*/
-    /*margin-top: 20px;*/
-    /*overflow: hidden;*/
-    /*padding: 40px 20px 40px 10px;*/
+    /*padding-bottom: 9px;*/
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;	
 }
+
 .top-line{
 	background-color: #ffc905;
 	width: 	100%;
@@ -164,7 +154,11 @@
 }
 .left-part{
 	margin-right: 40px;
-	background-color:#ffc905 ;
+	background-color:#ffc905;
+}
+.left-part.kinara-left{
+	margin-left: 40px;
+	margin-right: 0px;
 }
 
 .kinara-sign{
@@ -186,6 +180,13 @@
 	border: 3px solid #fff;
 	font-size: 1.6rem;
 	color: #fff;
+	flex-direction: column;
+	line-height: 20px;
+	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+}
+.kinara-sign span.small{
+	font-size: 12px;
+	display: block;
 }
 .to-right{
 	position: relative;
@@ -208,18 +209,24 @@
 	background-color: #0B2659 ;
 	color: #fff;
 }
-.right-part{padding: 30px;}
+.right-part{
+	padding: 30px;
+}
 .kinara-card-title{
 	color: #fff;
+	margin-bottom: 15px;
 }
 .kinara-h2{
 	margin-bottom: 30px; 
+}
+.kinara-h2.right{
+	text-align: right; 
 }
 .line-bar{
 	background-color: #fff;
 	width: 	100px;
 	height: 1px;
-	margin-top: 10px;	
+	margin-top: 15px;	
 }
 .kinara-pack{
 	display: -webkit-flex;
@@ -236,6 +243,68 @@
 .kinara-pack .table td{
 	border: none;
 	color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px){
+	.line-separator{
+		display: none;
+	}
+	.m-30{
+		margin: 0px;
+	}
+	.plr-10{
+		padding: 35px 10px;
+	}
+	.kinara-intro, 
+	.kinara-title{
+		padding: 20px 10px;
+	}
+}
+
+
+
+@media screen and (max-width: 420px) {
+	.package-place{
+		padding-left: 15px;
+	}
+	.kinara-h2{
+		margin-bottom: 20px;
+		font-size: 1.4em; 
+	}
+	.left-part{
+		margin-right: 40px;
+		width: 5px;
+	}
+	.kinara-sign{
+		height: 50px;
+		width: 50px;
+		border: 2px solid #fff;
+		left: -15px;
+		font-size: 1rem;
+		line-height: 18px;
+		top: -10px;
+	}
+	.right-part{
+		padding: 10px;
+		flex: 1;
+	}
+	.py-5{
+		padding-bottom: 0px !important;
+	}
+	.package-place.back-right{
+		padding-left: 0px;
+		padding-right: 5px;
+	}
+	.hidden-sm{
+		display: none;
+	}
+	.kinara-h2.right{
+		padding-left: 25px;
+		text-align: inherit !important;
+	}
+	
 }
 
 
