@@ -183,6 +183,12 @@
 	flex-direction: column;
 	line-height: 20px;
 	box-shadow: 5px 5px 25px rgba(0,0,0,.2);
+	 animation-play-state: paused;
+	 cursor: pointer;
+}
+.kinara-sign:hover{
+	/*animation-play-state: running;*/
+	animation: jello 1s;
 }
 .kinara-sign span.small{
 	font-size: 12px;
@@ -212,6 +218,9 @@
 .right-part{
 	padding: 30px;
 }
+tr.bold td{
+	font-weight: bold;
+}
 .kinara-card-title{
 	color: #fff;
 	margin-bottom: 15px;
@@ -229,13 +238,7 @@
 	margin-top: 15px;	
 }
 .kinara-pack{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;	
 	width: 	100%;
-	justify-content: space-between;
 }
 .right-part{
 	flex: 1;
