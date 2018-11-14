@@ -1,6 +1,9 @@
 .small-icon{
 	height: 60px;
 }
+.kinara_page{
+	overflow: hidden;
+}
 
 .part-title{
 	text-align: center;
