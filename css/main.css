@@ -325,11 +325,88 @@ tr.bold td{
 
 
 
+.ji-image{
+	margin-bottom: 20px;
+}
+.ji-image img{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	width: 100%;
+}
 
 
+.rep-img img{
+	width: 100%;
+}
 
+.grey-pic{
+	background-color: rgba(0,0,0,0.12);
+	height: 100px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+.comp-li li{
+	height: 40px;
+	border-bottom: 1px solid rgba(0,0,0,0.12);
+	margin: 0 !important;
 
+}
+.comp-li li a{
+	display: block;
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	transition: 0.5s;
+}
+.comp-li li a:hover{
+	text-decoration: none;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.a-lists{
+	list-style: lower-alpha;
+}
+.i-lists{
+	list-style: upper-roman !important;
+}
 
+#soka .prise-image{
+	background-color: #0B2659;
+	border: 1px solid #f7c602;
+}
+#soka .prise-image i {
+    font-size: 25px;
+    color: #f7c602;
+}
+a.text-center{
+	/*width: 100%;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	text-align: center !important;
+	color: white;
+	transition: 0.5s;
+}
+a.text-center:hover{
+	text-decoration: underline;
+}
+.table-kinara td a{
+	color: #5d7ef3;
+}
 
 
 

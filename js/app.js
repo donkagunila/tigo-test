@@ -6,7 +6,7 @@ $(document).ready(function () {
 		duration: 2000,
 		origin: 'left',
 		distance: '30px',
-		reset: true
+		reset: false
 	}, 500);
 
 	ScrollReveal().reveal('.bottom-in', {
@@ -14,7 +14,7 @@ $(document).ready(function () {
 		interval: 200,
 		origin: 'bottom',
 		distance: '10px',
-		reset: true,
+		reset: false,
 		delay: 240
 	});
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
 		duration: 2000,
 		origin: 'right',
 		distance: '30px',
-		reset: true
+		reset: false
 	});
 	// sr.reveal('.right-in');
 });
