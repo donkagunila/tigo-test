@@ -1,10 +1,12 @@
 .slider-image{
-	height: 300px;
+	height: 400px;
 	background-color: rgba(0,0,0,0.2);
+	background-image: url('../img/WebpageEng.png');
 	margin-bottom:10px;
+	background-size: cover;
 }
 .alpha-why{
-	height: 300px;
+	height: 360px;
 }
 .alpha-title{
 	margin-top: 30px;
@@ -28,11 +30,15 @@
 .bg-light-grey .card{
 	border-bottom: 2px solid #fff;
 	transition: 0.35s;
+	margin-bottom: 20px;
 }
 .bg-light-grey .card:hover{
 	/*box-shadow: 0px 1px 2px 12px rgba(0,0,0,0.02);*/
             border-bottom: 3px solid #ffc20e;
             box-shadow:0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.bg-light-grey .card:hover > .card-icon i{
+	color: red !important;
 }
 .grey{
 	background-color: rgba(0,0,0,0.12); 
@@ -60,6 +66,7 @@
 }
 .card-desc{
 	padding-bottom: 20px;
+	min-height: 100px;
 }
 .phone-display{
 	padding-top: 50px;
@@ -92,10 +99,11 @@
 }
 
 .phone-image img{
-	/*height: 100%;*/
+	/*height: 60%;*/
 	width: 100%;
 	position: relative;
-	left: -15px;
+	left: 2px;
+	top: -35px;
 }
 .phone-image{
 	padding: 30px;
@@ -137,4 +145,14 @@
 	margin-bottom: 30px;
 	font-weight: 500;
 	font-size: 35px;
+}
+.pb-50 p{
+	margin-bottom: 20px;
+}
+.pb-50 ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+.pb-50 h2{
+	margin-bottom: 30px;
 }
