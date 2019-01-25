@@ -218,8 +218,9 @@
 
 
 				<div class="col-md-4">
-					<div class="phone-image">
-						<img src="img/iphone.png" alt="">
+					<div class="phone-image" id="phoneimage">
+						<img src="img/iphone.png" class="phoneimage">
+						<!-- <img src="img/PayBill.gif" alt=""  class="gify"> -->
 					</div>
 				</div>
 
@@ -228,7 +229,7 @@
 				<div class="col-md-4">
 					<div class="app-desc right-in">
 
-						<div class="app-icon">
+						<div class="app-icon" id="billpay">
 							<img src="img/BillPay.png" alt="">
 						</div>
 
@@ -402,6 +403,20 @@
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="js/scrollreveal.min.js"></script>
 <script src="js/app.js"></script>
+
+<script>
+	$(document).ready(function () {
+		// $('#billpay').toggle('click', function () {
+		// 	var data = "<img src=\"img/iphone.png\">";
+		// 	$('.phoneimage').innerHTML(data);
+		// });
+
+		$('#billpay').click(function () {
+			$('.phoneimage').addClass('gify');
+			$('.phoneimage').attr('src', 'img/PayBill.gif');
+		})
+	});
+</script>
 
 	
 </body>
