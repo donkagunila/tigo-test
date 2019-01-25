@@ -412,8 +412,10 @@
 		// });
 
 		$('#billpay').click(function () {
-			$('.phoneimage').addClass('gify');
-			$('.phoneimage').attr('src', 'img/PayBill.gif');
+			var data = "<img src=\"img/PayBill.gif\" class=\"gify\">";
+			$('.phone-image').html('phone-image changed');
+			$('.phone-image').html(data);
+			// $('.phoneimage').attr('src', 'img/PayBill.gif');
 		})
 	});
 </script>
